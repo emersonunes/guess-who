@@ -1,0 +1,44 @@
+{
+   "questions":[
+      {
+         "question":"Which one is my favorite drink?",
+         "answers":[
+            "Coffee",
+            "Water",
+            "Whisky",
+            "Coca-cola"
+         ],
+         "correctIndex":0
+      },
+      {
+         "question":"Which framework do I use at work?",
+         "answers":[
+            "Vue.js",
+            "Django",
+            "Laravel",
+            "Node.js"
+         ],
+         "correctIndex":0
+      },
+      {
+         "question":"In which district do I live?",
+         "answers":[
+            "Oporto",
+            "Leiria",
+            "Lisbon",
+            "Coimbra"
+         ],
+         "correctIndex":3
+      },
+      {
+         "question":"I was born in... ?",
+         "answers":[
+            "Portugal",
+            "France",
+            "Brazil",
+            "Turkey"
+         ],
+         "correctIndex":2
+      }
+   ]
+}
