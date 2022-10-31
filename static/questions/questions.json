@@ -39,6 +39,26 @@
             "Turkey"
          ],
          "correctIndex":2
+      },
+      {
+         "question":"My dog's favorite barking time is?",
+         "answers":[
+            "At night",
+            "During the daily meeting",
+            "When he is alone",
+            "During lunch break"
+         ],
+         "correctIndex":1
+      },
+      {
+         "question":"My name is originally from?",
+         "answers":[
+            "Portugal",
+            "Brazil",
+            "Italy",
+            "France"
+         ],
+         "correctIndex":1
       }
    ]
 }

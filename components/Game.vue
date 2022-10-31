@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container v-if="currentIndex === 4" fluid>
+    <v-container v-if="currentIndex === 6" fluid>
       <v-row>
         <v-col class="my-10">
           <h1 class="text-center">You have finished the game!</h1>
@@ -20,6 +20,11 @@
     <v-container v-else fluid>
       <v-row>
         <v-col class="my-10">
+          <p class="text-center">Your current score is: {{score}}</p>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col class="my-10">
           <h1 class="text-center">{{questions[currentIndex].question}}</h1>
         </v-col>
       </v-row>
@@ -35,6 +40,7 @@
           block
           color="grey"
           x-large
+          :active-class="isCorrectAnswer"
           @click="submitAnswer(index, questions[currentIndex].correctIndex)"
           >
             {{answer}}
@@ -56,17 +62,23 @@ export default {
       scorePercentage: 0,
     }
   },
+  computed:{
+    isCorrectAnswer(){
+      return 'success'
+    }
+  },
   methods:{
     submitAnswer(index, correctIndex){
       this.currentIndex++;
       if(index === correctIndex){
         this.score++
-        this.scorePercentage = (this.score / 4) * 100
+        this.scorePercentage = (this.score / 6) * 100
       }
     },
     reset(){
       this.currentIndex = 0;
       this.score = 0
+      this.scorePercentage = 0
     }
   }
 }
